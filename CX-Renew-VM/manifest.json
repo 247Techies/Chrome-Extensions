@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Customer Info Modal",
+    "version": "1.0",
+    "description": "Select a name and date on a page to generate a customer support modal.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      },
+      "default_title": "Start Text Selection"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["style.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }

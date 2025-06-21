@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Quick Paste & Enter",
+    "version": "1.0",
+    "description": "Activates on a page to auto-paste from the clipboard and press Enter when the tab is focused.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "clipboardRead",
+      "storage"
+    ],
+    "action": {
+      "default_title": "Activate Quick Paste",
+      "default_icon": {
+        "16": "icons/icon-off-16.png",
+        "48": "icons/icon-off-48.png",
+        "128": "icons/icon-off-128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "icons/icon-on-16.png",
+      "48": "icons/icon-on-48.png",
+      "128": "icons/icon-on-128.png"
+    }
+  }

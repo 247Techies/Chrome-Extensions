@@ -1,0 +1,176 @@
+#sticky-note {
+  position: absolute;
+  width: 320px;
+  height: 480px;
+  background-color: #ffc;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e8e8e8;
+  z-index: 99999;
+  font-family: 'Arial', sans-serif; /* Switched to a more standard font */
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#sticky-note-header {
+  height: 40px; 
+  background-color: #ffd966;
+  cursor: move;
+  display: flex;
+  align-items: center;
+  padding: 0 5px 0 10px;
+  flex-shrink: 0;
+}
+
+#header-left-content {
+  display: flex;
+  align-items: center;
+}
+
+#sticky-note-logo {
+  /* UPDATED: Reduced height to make the logo smaller */
+  height: 32px; 
+  width: auto;
+  margin-right: 10px;
+}
+
+#sticky-note-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+#sticky-note-controls {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+#sticky-note-header button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 5px;
+  line-height: 1;
+  color: #555;
+}
+
+#sticky-note-header button:hover {
+  color: #000;
+}
+
+#delete-note-btn {
+  color: #c0392b;
+}
+
+/* Unchanged styles for brevity */
+#header-left-content { display: flex; align-items: center; }
+#sticky-note-logo { height: 32px; width: auto; margin-right: 10px; }
+#sticky-note-title { font-weight: bold; color: #333; font-size: 16px; white-space: nowrap; }
+#sticky-note-controls { margin-left: auto; display: flex; align-items: center; }
+#sticky-note-header button { background: transparent; border: none; cursor: pointer; font-size: 18px; font-weight: bold; padding: 0 5px; line-height: 1; color: #555; }
+#sticky-note-header button:hover { color: #000; }
+#delete-note-btn { color: #c0392b; }
+#delete-note-btn:hover { color: #e74c3c; }
+
+
+#sticky-note-textarea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.4;
+  outline: none;
+  flex-grow: 1;
+  /* UPDATED: Calculation for header AND footer */
+  height: calc(100% - 40px - 25px); 
+}
+
+/* --- NEW STYLES FOR FOOTER AND MODAL --- */
+
+#sticky-note-footer {
+  height: 25px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Pushes icon to the right */
+  padding: 0 8px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e8e8e8;
+}
+
+#info-btn {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  background: #fff;
+  color: #777;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-btn:hover {
+  background: #eee;
+  color: #333;
+}
+
+/* Modal styles */
+#info-modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100000;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  position: relative;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+#info-modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+#info-modal-close-btn:hover {
+  color: #000;
+}
+
+#info-modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#info-modal-content p {
+  color: #555;
+  line-height: 1.6;
+}
