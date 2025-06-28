@@ -1,0 +1,93 @@
+/* The blurred background overlay */
+#safe-close-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 2147483646; /* A very high z-index */
+  }
+  
+  /* The modal window itself */
+  #safe-close-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 2147483647; /* Must be higher than backdrop */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  #safe-close-modal h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  #sc-summary-details {
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  #sc-summary-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sc-summary-details li {
+    padding: 4px 0;
+  }
+  
+  .sc-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .sc-btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+  
+  .sc-btn:active {
+    transform: scale(0.97);
+  }
+  
+  .sc-btn-danger {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .sc-btn-danger:hover {
+    background-color: #c0392b;
+  }
+  
+  .sc-btn {
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ddd;
+  }
+  
+  .sc-btn:hover {
+    background-color: #e0e0e0;
+  }
