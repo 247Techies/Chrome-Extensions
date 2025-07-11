@@ -1,0 +1,59 @@
+[
+    {
+      "id": "sfc_scan",
+      "title": "Run System File Checker",
+      "description": "Scans the integrity of all protected system files and replaces corrupted files with a cached copy.",
+      "keywords": ["sfc", "system file checker", "corrupt files"],
+      "ticket_template": "Ran SFC scan to check for and repair Windows system file corruption.",
+      "platform": "windows",
+      "requires_admin": true,
+      "execution": [
+        {
+          "step": "Open a new Command Prompt or PowerShell terminal as an Administrator.",
+          "command": null
+        },
+        {
+          "step": "Run the scan. This may take some time.",
+          "command": "sfc /scannow"
+        }
+      ]
+    },
+    {
+      "id": "flush_dns",
+      "title": "Flush DNS Cache",
+      "description": "Clears the local DNS resolver cache to help resolve network connectivity issues.",
+      "keywords": ["dns", "flushdns", "network", "connectivity"],
+      "ticket_template": "Flushed the DNS resolver cache.",
+      "platform": "windows",
+      "requires_admin": true,
+      "execution": [
+        {
+          "step": "Open Command Prompt or PowerShell as an Administrator.",
+          "command": null
+        },
+        {
+          "step": "Execute the flush command.",
+          "command": "ipconfig /flushdns"
+        }
+      ]
+    },
+    {
+      "id": "ip_renew",
+      "title": "Release & Renew IP Address",
+      "description": "Releases the current IP address and requests a new one from the DHCP server.",
+      "keywords": ["ip", "ipconfig", "renew", "network"],
+      "ticket_template": "Performed an IP release and renew to resolve network configuration issues.",
+      "platform": "windows",
+      "requires_admin": false,
+      "execution": [
+        {
+          "step": "Open Command Prompt.",
+          "command": "ipconfig /release"
+        },
+        {
+          "step": "Run the renew command.",
+          "command": "ipconfig /renew"
+        }
+      ]
+    }
+  ]

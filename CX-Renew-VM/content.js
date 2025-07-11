@@ -54,7 +54,7 @@
           <p>If you need any assistance with the renewal process or have any questions, please don't hesitate to contact us at</p>
           <div class="my-extension-contact-info">
             US: <strong>1-951-225-4560</strong><br>
-            UK: <strong>0-203-519-7247</strong><br>
+            UK: <strong>0-800-410-1205</strong><br>
             AUS: <strong>1-800-223-611</strong>
           </div>
           <p>Our team is here to help.</p>

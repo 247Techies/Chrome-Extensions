@@ -1,0 +1,26 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Style for code blocks within the steps list */
+.step-code {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.step-code code {
+    white-space: pre-wrap; /* Allows long commands to wrap */
+    word-break: break-all;
+}
+
+/* Ensure select2 dropdown blends with bootstrap theme */
+.select2-container--bootstrap-5 .select2-selection {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CX Reminders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container glass-ui">
+        <h1>New Reminder</h1>
+        <div class="form-group">
+            <label for="cxName">CX Name:</label>
+            <input type="text" id="cxName" placeholder="e.g., John Doe">
+        </div>
+        <div class="form-group">
+            <label for="cxType">CX Type:</label>
+            <input type="text" id="cxType" placeholder="e.g., VIP, New Lead">
+        </div>
+        <div class="form-group">
+            <label for="ticketLink">Ticket Link:</label>
+            <input type="text" id="ticketLink" placeholder="https://your-ticketing-system.com/12345">
+        </div>
+        <div class="form-group">
+            <label for="followUpTime">Call / Follow-up Time:</label>
+            <input type="datetime-local" id="followUpTime">
+        </div>
+        <button id="setReminderBtn">Set Reminder</button>
+        <button id="closeBtn" class="secondary-btn">Close</button>
+        <hr>
+        <h2 class="title-with-count">
+            Active Reminders
+            <span id="reminderCount" class="title-count"></span>
+        </h2>
+        <div id="remindersList"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
