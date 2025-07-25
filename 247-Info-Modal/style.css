@@ -125,6 +125,35 @@ html.support-modal-open > body > *:not(#support-modal-container) {
   text-align: center;
 }
 
+/* Styling for the new troubleshooting text block */
+#support-modal .troubleshooting-text {
+  font-size: 0.85rem;
+  color: #5f420a; /* Darker color for readability on yellow */
+  line-height: 1.5;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background-color: #fffbef; /* A light, noticeable yellow */
+  border: 1px solid #fce38a;
+  border-left: 4px solid #fbd38d; /* A thicker left border for emphasis */
+  border-radius: 6px;
+}
+
+#support-modal .troubleshooting-text strong {
+  color: #422d03; /* Even darker for the heading */
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+#support-modal .troubleshooting-text a {
+  color: #3182ce;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#support-modal .troubleshooting-text a:hover {
+  color: #2b6cb0;
+}
+
 /*  === THE FIX IS HERE === */
 /* Only target lists INSIDE the modal */
 #support-modal ul {

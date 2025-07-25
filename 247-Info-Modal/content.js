@@ -42,6 +42,16 @@
         <div class="contact-box">
           <a href="https://247t.tech" target="_blank" rel="noopener noreferrer" class="contact-info-link">247t.tech</a>
         </div>
+
+        <p class="troubleshooting-text">
+          <strong>Having Trouble Accessing This Site?</strong><br>
+          If this website isn’t loading properly, please try visiting our 
+          <a href="https://support.247techies.tech" target="_blank" rel="noopener noreferrer">support.247techies.tech</a> 
+          or 
+          <a href="https://help.247techies.tech/" target="_blank" rel="noopener noreferrer">help.247techies.tech</a> 
+          to continue accessing our services without interruption.
+        </p>
+        
         <p>Visit our support portal at 247t.tech to:</p>
         <ul>
           <li>Chat live with a support agent</li>
