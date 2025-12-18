@@ -40,7 +40,7 @@
       <div class="modal-section">
         <h2>🌐 Connect with Us Online:</h2>
         <div class="contact-box">
-          <a href="https://247t.tech" target="_blank" rel="noopener noreferrer" class="contact-info-link">247t.tech</a>
+          <a href="https://support.247techies.lk" target="_blank" rel="noopener noreferrer" class="contact-info-link">support.247techies.lk</a>
         </div>
 
         <p class="troubleshooting-text">
@@ -51,14 +51,7 @@
           <a href="https://help.247techies.tech/" target="_blank" rel="noopener noreferrer">help.247techies.tech</a> 
           to continue accessing our services without interruption.
         </p>
-        
-        <p>Visit our support portal at 247t.tech to:</p>
-        <ul>
-          <li>Chat live with a support agent</li>
-          <li>Submit a help request or ticket</li>
-          <li>Access guides, FAQs, and service updates</li>
-          <li>Track your ongoing support cases</li>
-        </ul>
+
       </div>
 
     </div>

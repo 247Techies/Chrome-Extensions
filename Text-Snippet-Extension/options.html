@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Snippets</title>
+    <!-- Local Libraries -->
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/all.min.css">
+    <link rel="stylesheet" href="libs/sweetalert2.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <header class="d-flex align-items-center pb-3 mb-4 border-bottom">
+            <i class="fas fa-stream fa-2x me-3"></i>
+            <span class="fs-4">My Text Snippets</span>
+        </header>
+
+        <!-- Add/Edit Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Add / Edit Snippet</h5>
+            </div>
+            <div class="card-body">
+                <form id="snippet-form">
+                    <input type="hidden" id="snippet-id">
+                    <div class="mb-3">
+                        <label for="snippet-code" class="form-label">Code (e.g., `!sig`)</label>
+                        <input type="text" class="form-control" id="snippet-code" placeholder="Enter a short, unique code" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="snippet-text" class="form-label">Snippet Text</label>
+                        <textarea class="form-control" id="snippet-text" rows="4" placeholder="Enter the full text to expand into" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>Save Snippet</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-edit" style="display: none;"><i class="fas fa-times me-2"></i>Cancel Edit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Search and Snippet List -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Existing Snippets</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="search-input" placeholder="Search snippets by code or text...">
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Snippet</th>
+                                <th scope="col" class="text-end">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="snippets-list">
+                            <!-- Snippets will be loaded here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Local JavaScript Libraries -->
+    <script src="libs/sweetalert2.min.js"></script>
+    <script src="options.js"></script>
+</body>
+</html>

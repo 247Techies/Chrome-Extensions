@@ -159,6 +159,9 @@ html.support-modal-open > body > *:not(#support-modal-container) {
 #support-modal ul {
   list-style: none; /* No more !important needed */
   padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+  gap: 0.5rem 1.5rem; /* Adds space: 0.5rem between rows, 1.5rem between columns */
 }
 
 /* Only target list items INSIDE the modal */

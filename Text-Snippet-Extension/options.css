@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.table th, .table td {
+    white-space: nowrap;
+}
+
+.table td:nth-child(2) {
+    white-space: normal;
+    word-break: break-word;
+    max-width: 400px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
